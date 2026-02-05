@@ -36,7 +36,7 @@
 }
 
 *{ box-sizing:border-box; }
-html,body{ height:100%; }
+html,body{ min-height:100%; }
 body{
   margin:0;
   font-family: var(--font-ui);
@@ -496,3 +496,4 @@ textarea.input{ min-height: 130px; resize: vertical; }
   .mobile-panel.show{ display:block; }
   .footer-grid{ grid-template-columns: 1fr; }
 }
+
