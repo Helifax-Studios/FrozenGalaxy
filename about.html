@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Frozen Galaxy</title>
+  <meta name="description" content="Frozen Galaxy is a nitrogen ice cream stand bringing fresh-made scoops and cosmic vibes." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="bg-aurora"></div>
+  <div class="bg-stars"></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Frozen Galaxy logo" />
+          <div class="title">
+            <strong>Frozen Galaxy</strong>
+            <span>Nitrogen Ice Cream</span>
+          </div>
+        </a>
+
+        <div class="links">
+          <a data-nav-link href="index.html">Home</a>
+          <a data-nav-link href="flavors.html">Flavors</a>
+          <a data-nav-link href="events.html">Events</a>
+          <a data-nav-link href="about.html">About</a>
+          <a data-nav-link href="contact.html">Contact</a>
+        </div>
+
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">☰ Menu</button>
+      </nav>
+
+      <div class="mobile-panel" data-mobile-panel>
+        <a data-nav-link href="index.html">Home</a>
+        <a data-nav-link href="flavors.html">Flavors</a>
+        <a data-nav-link href="events.html">Events</a>
+        <a data-nav-link href="about.html">About</a>
+        <a data-nav-link href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h1>About Frozen Galaxy</h1>
+        <p>
+          Frozen Galaxy is a nitrogen ice cream stand built around one idea:
+          ice cream should be an experience — not just a scoop.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid cols-2">
+          <div class="card" style="padding:18px;">
+            <h2>What we do</h2>
+            <p class="lead">
+              We mix each order fresh, then flash-freeze it with liquid nitrogen for a smooth texture and a foggy show.
+            </p>
+
+            <div class="grid">
+              <div class="tile">
+                <span class="accent cyan"></span>
+                <h3>Fresh-made per order</h3>
+                <p>Not pre-packaged dots — real crafted ice cream, made while you watch.</p>
+              </div>
+              <div class="tile">
+                <span class="accent pink"></span>
+                <h3>Cosmic theme</h3>
+                <p>Signature colors and names that match the brand and make it memorable.</p>
+              </div>
+              <div class="tile">
+                <span class="accent mint"></span>
+                <h3>Local pop-ups</h3>
+                <p>Serving Lancaster County at markets, fairs, and private events.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:18px;">
+            <h2>Our vibe</h2>
+            <p class="lead">
+              Cold, clean, and glowing — like a galaxy with frost on the window.
+            </p>
+
+            <div class="tile">
+              <span class="accent coral"></span>
+              <h3>Not a “rip-off”</h3>
+              <p>
+                The difference is the craft + customization + performance. It’s not dots — it’s your ice cream,
+                built live, with signature flavors you can only get here.
+              </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="flavors.html">Explore flavors</a>
+              <a class="btn btn-ghost" href="events.html">Book us</a>
+            </div>
+
+            <p class="mini" style="margin-top:10px;">
+              Tip: add a short “origin story” here later (how you started, why the name, what you stand for).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong style="color:var(--glow-pink); font-family: var(--font-title);">Frozen Galaxy</strong>
+          <div class="mini">Nitrogen Ice Cream • Lancaster County</div>
+          <div class="divider"></div>
+          <small>© <span id="year"></span> Frozen Galaxy.</small>
+        </div>
+        <div>
+          <small>
+            Email: <a href="mailto:hello@frozengalaxy.example">hello@frozengalaxy.example</a><br/>
+            Contact: <a href="contact.html">Contact page</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
